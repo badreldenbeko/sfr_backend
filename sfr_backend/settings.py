@@ -24,7 +24,7 @@ SECRET_KEY = 'p2_!-8h%spx&mch-#21vtsm3^9mdg#bdr6!1mc50d7_ntvx!$c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sfr.sharp4it.com', '116.202.19.148']
+ALLOWED_HOSTS = ['localhost', 'sfr.sharp4it.com', '116.202.19.148']
 
 # Application definition
 
