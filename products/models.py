@@ -18,6 +18,8 @@ class Product(models.Model):
     code = models.CharField(max_length=20, unique=True)
     image = models.ImageField(upload_to=upload_location, default='/product.png', blank=True, null=True)
     in_request = models.BooleanField(default=False)
+    res_time = models.FloatField(blank=True, null=True, help_text='Per Hours')
+    fix_time = models.FloatField(blank=True, null=True, help_text='Per Hours')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

@@ -9,5 +9,5 @@ class RequestViewSetCreate(viewsets.ModelViewSet):
 
 
 class RequestViewSetRead(viewsets.ModelViewSet):
-    queryset = Request.objects.all()
+    queryset = Request.objects.all().order_by('-created')
     serializer_class = RequestSerializierRead
